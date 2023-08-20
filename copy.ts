@@ -7,21 +7,59 @@
 //   value++
 // }
 // console.log(num);
-let shopping:string[]=['super','tuc','peanut','special','zeera plus',]//1st way
-var cart=(itemIndex:number,itemRemove:number,itemAdd:string,)=>{
-    // shopping.splice(itemIndex,itemRemove,itemAdd)
-    // let itemUpdate:string=shopping
+let shopping:string[]=['super','tuc','peanut','special','zeera plus',]
+var cart=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
+    shopping.splice(itemIndex,itemRemove,itemAdd)
     if(itemAdd){
-        shopping.splice(itemIndex,0,itemAdd) 
-        console.log(`item_added is'${shopping},${itemAdd}`)
+        console.log(`item_added is'${itemAdd},new item is,${shopping}`)
     }
     else if(itemRemove){
-        shopping.splice(itemIndex,itemRemove) 
-        console.log('item_remove is',shopping)
+        console.log(`item_remove is ${itemRemove} remaining item is ${shopping}`)
     }
    
-    // console.log(shopping)
-    // console.log(shopping.length)
+    console.log(`updated quantities is ${shopping.length}`)
    return shopping
 }
-cart(3,1,"0")
+cart(2,4,"")
+
+// let sum4=(array:number[])=>{
+// array.length
+// let z:number=0;
+// while(z<array.length){
+// // z+=array
+// }
+// }
+// array.length
+// while(array.length<=10){
+//     array.length++
+// }
+// console.log(array.length)
+// let sumArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const sumAll = (sum: number[]) => {
+//   let allSum: number = 0;
+//   let i = 0;
+//   while (i < sum.length) {
+//     allSum += sum[i];
+//     i++;
+//   }
+//   return allSum;
+// };
+
+// console.log(sumAll(sumArray));
+function factorial(d:number){
+    if (d<0){
+       console.log("factorial of negative number is not possible")
+    }
+    if(d==0|| d==1){
+       console.log("factorial is",1)
+    }
+    
+    let c:number = 1;
+    while (d> 0) {
+        c *=d;
+        c++;//decrement operator
+    }
+ console.log(c)//if we call the result outside the loop it will keep multiplying the number untill 
+  }//condition reach 
+  factorial(5)
