@@ -63,3 +63,12 @@ function factorial(d:number){
  console.log(c)//if we call the result outside the loop it will keep multiplying the number untill 
   }//condition reach 
   factorial(5)
+//   
+// function processArray(numbers: number[]): number {
+//    let sum = 0;
+//    for (const num of numbers) {
+//        sum += num;
+//    }
+//    return sum;
+// }
+// processArray() 
