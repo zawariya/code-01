@@ -8,19 +8,19 @@
 //   value++
 // }
 // console.log(num);
-let shopping = ['super', 'tuc', 'peanut', 'special', 'zeera plus',];
-var cart = (itemIndex, itemRemove, itemAdd) => {
-    shopping.splice(itemIndex, itemRemove, itemAdd);
-    if (itemAdd) {
-        console.log(`item_added is'${itemAdd},new item is,${shopping}`);
-    }
-    else if (itemRemove) {
-        console.log(`item_remove is ${itemRemove} remaining item is ${shopping}`);
-    }
-    console.log(`updated quantities is ${shopping.length}`);
-    return shopping;
-};
-cart(2, 4, "");
+// let shopping:string[]=['super','tuc','peanut','special','zeera plus',]
+// var cart=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
+//     shopping.splice(itemIndex,itemRemove,itemAdd)
+//     if(itemAdd){
+//         console.log(`item_added is'${itemAdd},new item is,${shopping}`)
+//     }
+//     else if(itemRemove){
+//         console.log(`item_remove is ${itemRemove} remaining item is ${shopping}`)
+//     }
+//     console.log(`updated quantities is ${shopping.length}`)
+//    return shopping
+// }
+// cart(2,4,"")
 // let sum4=(array:number[])=>{
 // array.length
 // let z:number=0;
