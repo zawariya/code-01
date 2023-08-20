@@ -16,14 +16,14 @@ let user=(b:number,c:number,d:number)=>{
 }
 user(6,4,8)
 // // 2  Implement a simple shopping cart program using an array. Create functions to add items, remove items, and update quantities using the splice method. Print the cart's contents after each operation
-/*let shopping:string[]=['super','tuc','peanut','special','zeera plus',]//1st way
-let cart=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
+let shopping1:string[]=['super','tuc','peanut','special','zeera plus',]//1st way
+let cart1=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
     shopping.splice(itemIndex,itemRemove,itemAdd)
-    console.log(shopping)
+    console.log(shopping1)
     console.log(shopping.length)
      return shopping
 }
-cart(2,0,'bread')*/
+cart1(2,0,'bread')
 // // 2nd way
 // let shopping1:string[]=['super','tuc','peanut','special','zeera plus',]//1st way
 // let cart1=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
