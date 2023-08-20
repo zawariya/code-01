@@ -85,7 +85,7 @@ console.log(add,list)
     // let add2:number=0;
     let k=(l:number[])=>{
     let add2:number=0;
-    for(let s=0; s>l.length; s++){
+    for(let s=0; s<l.length; s++){
         add2+= l[s];
      }
     
@@ -93,4 +93,4 @@ console.log(add,list)
      return add2
     }
     // add1(1,)
-   
+   console.log(k([1,2,3,4,5,6,7,8,9,10]));

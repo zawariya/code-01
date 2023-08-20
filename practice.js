@@ -83,10 +83,14 @@ console.log(add, list);
 // - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
 // function add1(todos:number[]) {
 // let add2:number=0;
-let todos1 = [1, 2, 3, 4, 5, 6];
-let add2 = 0;
-for (let s = 0; s > todos1.length; s++) {
-    add2 = add2 + s;
-}
-console.log(add2);
+let k = (l) => {
+    let add2 = 0;
+    for (let s = 0; s < l.length; s++) {
+        add2 += l[s];
+    }
+    console.log(add2);
+    return add2;
+};
 // add1(1,)
+let result=k([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(result);
