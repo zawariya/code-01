@@ -115,17 +115,16 @@ console.log(add,list)
 // console.log(celsius1(5))
 //  - Write a program having an array of numbers 
 //  if the number is negative it should remove the negative number from the array.
-// let negative=(neg:number[])=>{
-//  for(let index=0;index<neg.length;index++) {
-//     if(neg[index]<0){
-//         neg.splice(index,1)
-//     }    
-//     // console.log(neg)
-// }
-// console.log(neg)
-// return neg;
-// }
-// console.log(negative([-1,-2,3,-4,5,-6,7,8,-9]))
+/*let negative=(neg:number[])=>{
+ for(let index=0;index<neg.length;index--) {
+    if(neg[index]<0){
+        neg.splice(index,1)
+    }
+}
+console.log(neg)
+return neg;
+}
+console.log(negative([-1,-2,3,-4,-5,-6,7,-8,-9]))*/
 // let remove:number[]=[-1,-2,3,-4,5,-6,7,8,-9]
 // let index:number=0;
 // for (let index = 0; index < remove.length; index++) {
@@ -134,12 +133,12 @@ console.log(add,list)
 //     }
 // }
 // console.log(remove)
-let num = [-1, -2, 3, -4, -5, -6, 7, 8, -9];
-let value = 0;
-while (value < num.length) {
-    if (num[value] < 0) {
-        num.splice(value, 1);
-    }
-    value++;
-}
-console.log(num);
+// let num:number[]=[-1,-2,3,-4,-5,-6,7,8,-9]
+// let value=0
+// while(value<num.length){
+//   if(num[value]<0){
+//     num.splice(value,1) 
+//    }
+//   value++
+// }
+// console.log(num);

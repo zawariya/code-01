@@ -68,3 +68,13 @@ factorial(5);
 //    return sum;
 // }
 // processArray() 
+let negative = (neg) => {
+    for (let index = 0; index < neg.length; index++) {
+        if (neg[index] < 0) {
+            neg.splice(index, 1);
+        }
+    }
+    console.log(neg);
+    return neg;
+};
+console.log(negative([-1, -2, 3, -4, -5, -6, 7, -8, -9]));
