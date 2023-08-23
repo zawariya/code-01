@@ -9,110 +9,75 @@
 - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
 - Implement a program that takes a list of temperatures in Celsius as input from the user. Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.*/
 // 1 Create a function that takes an array, an index, and a value as parameters. Inside the function, use the splice method to insert the value at the specified index in the array. Return the modified array.
-/*let user=(b:number,c:number,d:number)=>{
-    var a:number[]=[1,2,3,4,5,6,7,8,9,10];
-    a.splice(b,c,d);
-    console.log(a)
-    return a
-}
-user(6,4,8)
+let user = (b, c, d) => {
+    var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    a.splice(b, c, d);
+    console.log(a);
+    return a;
+};
+user(6, 4, 8);
 // // // 2  Implement a simple shopping cart program using an array. Create functions to add items, remove items, and update quantities using the splice method. Print the cart's contents after each operation
-let shopping1:string[]=['super','tuc','peanut','special','zeera plus',]//1st way
-let addcart=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
-    shopping1.splice(itemIndex,itemRemove,itemAdd)
-    console.log(shopping1)
-    console.log(shopping1.length)
-     return shopping1
-}
+let shopping1 = ['super', 'tuc', 'peanut', 'special', 'zeera plus',]; //1st way
+let addcart = (itemIndex, itemRemove, itemAdd) => {
+    shopping1.splice(itemIndex, itemRemove, itemAdd);
+    console.log(shopping1);
+    console.log(shopping1.length);
+    return shopping1;
+};
 // cart(2,0,'bread')
 // // // 2nd way
-let shopping2:string[]=['super','tuc','peanut','special','zeera plus',]
-var cart=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
-    shopping2.splice(itemIndex,itemRemove,itemAdd)
-    if(itemAdd){
-        console.log(`item_added is'${itemAdd},new item is,${shopping2}`)
+let shopping2 = ['super', 'tuc', 'peanut', 'special', 'zeera plus',];
+var cart = (itemIndex, itemRemove, itemAdd) => {
+    shopping2.splice(itemIndex, itemRemove, itemAdd);
+    if (itemAdd) {
+        console.log(`item_added is'${itemAdd},new item is,${shopping2}`);
     }
-    else if(itemRemove){
-        console.log(`item_remove is ${itemRemove} remaining item is ${shopping2}`)
+    else if (itemRemove) {
+        console.log(`item_remove is ${itemRemove} remaining item is ${shopping2}`);
     }
-   
-    console.log(`updated quantities is ${shopping2.length}`)
-   return shopping2
-}
+    console.log(`updated quantities is ${shopping2.length}`);
+    return shopping2;
+};
 // // // Write a program that uses a while loop to print the first 25 integers.
-let c4:number=0;
-while (c4<=25){
-   console.log("+_",c4)
-   c4++
+let c4 = 0;
+while (c4 <= 25) {
+    console.log("+_", c4);
+    c4++;
 }
 // // // - Write a program that uses a while loop to print the first 10 even numbers
-let c1:number=1;
-while(c1<=20){
-    if(c1%2==0){
-        console.log(c1)
+let c1 = 1;
+while (c1 <= 20) {
+    if (c1 % 2 == 0) {
+        console.log(c1);
     }
-    c1++
+    c1++;
 }
 //  - Create a function that takes a positive integer as parameter and uses a while loop to calculate and return the factorial of that number.
- function factorial1(d:number){
-   if (d<0){
-      console.log("factorial of negative number is not possible")
-   }
-   if(d==0|| d==1){
-      console.log("factorial is",1)
-   }
-   let c:number = 1;
-   while (d> 0) {
-       c*=d;
-       d--;//decrement operator
-   }
-console.log(c)//if we call the result outside the loop it will keep multiplying the number untill
- }//condition reach
- factorial1(5)
- Sum of all number by using array function
-
- 
-let add:number=0;
-let list:number[]=[]
-for(let m=0; m<=100;m++){
-    if(m%2==0){
-    add=add+m;
-    list.push(m)
+function factorial1(d) {
+    if (d < 0) {
+        console.log("factorial of negative number is not possible");
+    }
+    if (d == 0 || d == 1) {
+        console.log("factorial is", 1);
+    }
+    let c = 1;
+    while (d > 0) {
+        c *= d;
+        d--; //decrement operator
+    }
+    console.log(c); //if we call the result outside the loop it will keep multiplying the number untill 
+} //condition reach 
+factorial1(5);
+//  Sum of all number by using array function
+let add = 0;
+let list = [];
+for (let m = 0; m <= 100; m++) {
+    if (m % 2 == 0) {
+        add = add + m;
+        list.push(m);
     }
 }
-console.log(add,list)
-// - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
-// function add1(todos:number[]) {
-    // let add2:number=0;
-    let k=(l:number[])=>{
-    let add2:number=0;
-    for(let s=0; s<l.length; s++)//here s is the value of index in array which began with 0
-    {
-        add2+= l[s];
-     }
-    
-     console.log(add2);
-     return add2
-    }
-    // add1(1,)
-   console.log(k([1,2,3,4,5,6,7,8,9,10]));*/
-// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store
-//  the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.*/
-// let celsius1=(temp1:number)=>{
-//     let Fahrenheit:number[]=[]
-//     let c:number=0;
-//     let result2:number= (c * 9/5) + 32
-//     while(true){
-//         Fahrenheit+=temp1[c]
-//         if(c>-273 && c<273){
-//             Fahrenheit+=temp1[c]
-//             console.log(result2)
-//              return result2
-//         }
-//         Fahrenheit.push(result2)
-//     }
-// }
-// console.log(celsius1(5))
+console.log(add, list);
 //  - Write a program having an array of numbers 
 //  if the number is negative it should remove the negative number from the array.
 let negative = (neg) => {
@@ -143,3 +108,27 @@ console.log(negative([-1, -2, 3, -4, -5, 6]));
 //   value++
 // }
 // console.log(num);
+// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store
+//  the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.*/
+let celsius1 = (temp1) => {
+    let Fahrenheit = [];
+    let index = 0;
+    while (index < temp1.length) {
+        let result = ((temp1[index] * 9) / 5) + 32;
+        // console.log(result);
+        Fahrenheit.push(result);
+        index++;
+        // return result; 
+    }
+    console.log(Fahrenheit);
+    return Fahrenheit;
+};
+console.log(celsius1([1, 2, 3]));
+// let tempInCel:number[] = [33, 65, 72];
+// let tempInFar:number[] = [];
+// let index3:number = 0;
+// while (index3 < tempInCel.length){
+//     tempInFar[index3] = (tempInCel[index3] * 9/5) + 32 ;
+//     index3++;
+// }
+// console.log(tempInFar);

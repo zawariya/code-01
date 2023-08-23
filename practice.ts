@@ -8,7 +8,7 @@
  - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
  - Implement a program that takes a list of temperatures in Celsius as input from the user. Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.*/
 // 1 Create a function that takes an array, an index, and a value as parameters. Inside the function, use the splice method to insert the value at the specified index in the array. Return the modified array.
-/*let user=(b:number,c:number,d:number)=>{
+let user=(b:number,c:number,d:number)=>{
     var a:number[]=[1,2,3,4,5,6,7,8,9,10];
     a.splice(b,c,d);
     console.log(a)
@@ -68,7 +68,7 @@ while(c1<=20){
 console.log(c)//if we call the result outside the loop it will keep multiplying the number untill 
  }//condition reach 
  factorial1(5)
- Sum of all number by using array function
+//  Sum of all number by using array function
 
  
 let add:number=0;
@@ -80,39 +80,6 @@ for(let m=0; m<=100;m++){
     }
 }
 console.log(add,list)
-// - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
-// function add1(todos:number[]) {
-    // let add2:number=0;
-    let k=(l:number[])=>{
-    let add2:number=0;
-    for(let s=0; s<l.length; s++)//here s is the value of index in array which began with 0
-    {
-        add2+= l[s];
-     }
-    
-     console.log(add2);
-     return add2
-    }
-    // add1(1,)
-   console.log(k([1,2,3,4,5,6,7,8,9,10]));*/
-// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store
-//  the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.*/
-// let celsius1=(temp1:number)=>{
-//     let Fahrenheit:number[]=[]
-//     let c:number=0;
-//     let result2:number= (c * 9/5) + 32
-//     while(true){
-//         Fahrenheit+=temp1[c]
-//         if(c>-273 && c<273){
-//             Fahrenheit+=temp1[c]
-//             console.log(result2)
-//              return result2
-//         }
-//         Fahrenheit.push(result2)
-//     }
-   
-// }
-// console.log(celsius1(5))
 //  - Write a program having an array of numbers 
 //  if the number is negative it should remove the negative number from the array.
 let negative=(neg:number[])=>{
@@ -122,7 +89,7 @@ let negative=(neg:number[])=>{
         index--// this will bring back index value to "0"
     }   
 }
- console.log(neg)
+console.log(neg)
 return neg;
 }
 console.log(negative([-1,-2,3,-4,-5,6]))
@@ -143,3 +110,28 @@ console.log(negative([-1,-2,3,-4,-5,6]))
 //   value++
 // }
 // console.log(num);
+// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store
+//  the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.*/
+let celsius1=(temp1:number[])=>{
+    let Fahrenheit:number[]=[];
+    let index:number=0;
+    while ( index < temp1.length) {
+        let result:number=((temp1[index]*9)/5)+32;
+        // console.log(result);
+         Fahrenheit.push(result)
+         index++;
+        // return result; 
+    }
+    console.log(Fahrenheit)
+     return Fahrenheit; 
+ } 
+console.log(celsius1([1,2,3]))
+// let tempInCel:number[] = [33, 65, 72];
+// let tempInFar:number[] = [];
+
+// let index3:number = 0;
+// while (index3 < tempInCel.length){
+//     tempInFar[index3] = (tempInCel[index3] * 9/5) + 32 ;
+//     index3++;
+// }
+// console.log(tempInFar);

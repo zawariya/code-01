@@ -1,80 +1,41 @@
 "use strict";
-// let num:number[]=[1,2,-3,4,5,-6,7,8]
-// let value=0
-// while(value<num.length){
-//   if(num[value]<0){
-//     num.splice(value,1) 
-//    }
-//   value++
-// }
-// console.log(num);
-// let shopping:string[]=['super','tuc','peanut','special','zeera plus',]
-// var cart=(itemIndex:number,itemRemove:number,itemAdd:string)=>{
-//     shopping.splice(itemIndex,itemRemove,itemAdd)
-//     if(itemAdd){
-//         console.log(`item_added is'${itemAdd},new item is,${shopping}`)
-//     }
-//     else if(itemRemove){
-//         console.log(`item_remove is ${itemRemove} remaining item is ${shopping}`)
-//     }
-//     console.log(`updated quantities is ${shopping.length}`)
-//    return shopping
-// }
-// cart(2,4,"")
-// let sum4=(array:number[])=>{
-// array.length
-// let z:number=0;
-// while(z<array.length){
-// // z+=array
-// }
-// }
-// array.length
-// while(array.length<=10){
-//     array.length++
-// }
-// console.log(array.length)
-// let sumArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// const sumAll = (sum: number[]) => {
-//   let allSum: number = 0;
-//   let i = 0;
-//   while (i < sum.length) {
-//     allSum += sum[i];
-//     i++;
-//   }
-//   return allSum;
-// };
-// console.log(sumAll(sumArray));
-function factorial(d) {
-    if (d < 0) {
-        console.log("factorial of negative number is not possible");
+// Assignment for the week:
+//  - Develop a program that calculates and prints the sum of the first n even numbers using a for loop.
+//  - Implement a program that uses a for loop to iterate through an array of numbers and print only the even numbers.
+//  - Implement a program that uses a loop to iterate through an array of numbers and remove all the even numbers from them and just leave the odd ones
+//  - Write a program that defines a function to calculate the area of a circle. The function should take the radius as input and return the calculated area.
+//  - Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from the array.
+//  - Write a program that uses a function to find the largest element in an array of numbers.
+// 01
+let sumOfEven = (n) => {
+    let s = 0;
+    for (let i = 0; i <= n; i++) {
+        if (i % 2 == 0) {
+            s += i;
+        }
     }
-    if (d == 0 || d == 1) {
-        console.log("factorial is", 1);
+    console.log(s);
+    return s;
+};
+console.log(`sum of even numbers is ${sumOfEven(30)}`);
+//  - Implement a program that uses a for loop to iterate through an array of numbers and print only the even numbers.
+// 002 
+let even = [1, 3, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < even.length; i++) {
+    if (even[i] % 2 != 0) {
+        even.splice(i, 1);
+        i--;
     }
-    let c = 1;
-    while (d > 0) {
-        c *= d;
-        c++; //decrement operator
+}
+console.log(`Array of even number is ${even}`);
+//  - Implement a program that uses a loop to iterate through an array of numbers
+//  and remove all the even numbers from them and just leave the odd ones
+// 003
+let odd = [1, 2, 4, 5, 6, 7, 8, 9];
+for (let index = 0; index < odd.length; index++) {
+    if (odd[index] % 2 == 0) {
+        odd.splice(index, 1);
+        index--;
     }
-    console.log(c); //if we call the result outside the loop it will keep multiplying the number untill 
-} //condition reach 
-factorial(5);
-//   
-// function processArray(numbers: number[]): number {
-//    let sum = 0;
-//    for (const num of numbers) {
-//        sum += num;
-//    }
-//    return sum;
-// }
-// processArray() 
-// let negative=(neg:number[])=>{
-//    for(let index=0;index<neg.length;index++) {
-//       if(neg[index]<0){
-//           neg.splice(index,-1)
-//       }    
-//   }
-//   console.log(neg)
-//   return neg;
-//   }
-//   console.log(negative([-1,-2,3,-4,-5,-6,7,-8,-9]))
+}
+console.log(`Array of odd number is ${odd}`);
