@@ -39,3 +39,27 @@ for (let index = 0; index < odd.length; index++) {
     }
 }
 console.log(`Array of odd number is ${odd}`);
+//  - Write a program that defines a function to calculate the area of a circle. 
+// The function should take the radius as input and return the calculated area.
+// 004
+let Area = (radius1) => {
+    // let radius2:number=radius1;
+    let result = (22 / 7) * (radius1 * radius1);
+    console.log(result);
+    return result;
+};
+console.log(`Area of circle is ${Area(2)}`);
+//  - Develop a program that reads a list of grades and uses the splice method 
+// to remove failing grades (below 50) from the array.
+// 005
+let result = (grades) => {
+    for (let index = 0; index < grades.length; index++) {
+        if (grades[index] < 50) {
+            grades.splice(index, 1);
+            index--;
+        }
+    }
+    console.log(grades);
+    return grades;
+};
+console.log(result([70, 60, 50, 49, 47, 65]));
