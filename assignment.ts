@@ -62,3 +62,31 @@ let sumOfEven=(n:number)=>{
        return grades;
     }
     console.log(result([70,60,50,49,47,65]))
+//  - Write a program that uses a function to find the largest element in an array of numbers.
+// 006
+let largest=(digit:number[])=>{
+   let s:number=digit[0]// we consider the first element of array is large
+   for (let index = 0; index < digit.length; index++) {
+      if(digit[index]<s){
+         s=digit[index];
+         index--;
+      }
+  }
+  console.log(s);
+  return s;
+}
+console.log(largest([5,2,7,3,8,9,-1,0]))
+//  - Write a program that uses a function to find the largest element in an array of numbers.
+// 007
+let smallest=(digit:number[])=>{
+   let s:number=digit[0]// we consider the first element of array is large
+   for (let index = 0; index < digit.length; index++) {
+      if(digit[index]<s){
+         s=digit[index];
+         index--;
+      }
+  }
+  console.log(s);
+  return s;
+}
+console.log(smallest([5,2,7,3,8,9,-1,0]))
