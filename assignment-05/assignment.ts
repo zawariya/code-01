@@ -67,7 +67,7 @@ let sumOfEven=(n:number)=>{
 let largest=(digit:number[])=>{
    let s:number=digit[0]// we consider the first element of array is large
    for (let index = 0; index < digit.length; index++) {
-      if(digit[index]<s){
+      if(digit[index]>s){
          s=digit[index];
          index--;
       }
