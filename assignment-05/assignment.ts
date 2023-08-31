@@ -90,3 +90,19 @@ let smallest=(digit:number[])=>{
   return s;
 }
 console.log(smallest([5,2,7,3,8,9,-1,0]))
+//  - Write a program having an array of numbers 
+//  if the number is negative it should remove the negative number from the array.
+let negative1=(neg:number[])=>{
+   for(let index=0;index<neg.length;index++) {
+      if(neg[index]<0){
+          neg.splice(index,1)
+          index--// this will bring back index value to "0"
+      }   
+  }
+  console.log(neg)
+  return neg;
+  }
+  console.log(negative1([-1,-2,3,-4,-5,6]))
+// function remove(negative:[]) {
+   
+// }
