@@ -6,7 +6,7 @@
 //  - Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from the array.
 //  - Write a program that uses a function to find the largest element in an array of numbers.
 // 01
-let sumOfEven=(n:number)=>{
+/*let sumOfEven=(n:number)=>{
     let s:number=0;
     for(let i=0;i<=n;i++){
         if(i%2==0){
@@ -89,7 +89,7 @@ let smallest=(digit:number[])=>{
   console.log(s);
   return s;
 }
-console.log(smallest([5,2,7,3,8,9,-1,0]))
+console.log(smallest([5,2,7,3,8,9,-1,0]))*/
 //  - Write a program having an array of numbers 
 //  if the number is negative it should remove the negative number from the array.
 let negative1=(neg:number[])=>{
